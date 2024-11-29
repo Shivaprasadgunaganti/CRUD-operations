@@ -7,14 +7,12 @@ app.use(express.json())
 
 connectToDB()
 
-app.get("/",(req,res)=>{
-    res.send("hello world")
-})
 
 
 
 app.use("/api",productRoutes)
 
 app.listen(5000,()=>{
-    console.log("Server is connected At port 5000")
+    console.log("Server is connected At port 5000") 
 })
+console.log('hello')
